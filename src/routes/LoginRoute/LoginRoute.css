@@ -1,0 +1,19 @@
+#log-route-sec {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#log-route-h2 {
+	margin-bottom: 0;
+	align-self: flex-start;
+	margin-left: 2.5rem;
+}
+
+@media all and (min-width: 500px) {
+	#log-route-h2 {
+		margin: 10rem 0 0 0;
+		align-self: center;
+	}
+}
