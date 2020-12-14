@@ -20,3 +20,8 @@ Button {
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 }
+
+#alert {
+	color: red;
+	width: 75%;
+}
