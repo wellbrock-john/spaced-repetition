@@ -1,0 +1,15 @@
+.App {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 0;
+}
+
+.App header h1 a {
+	text-decoration: none;
+}
+
+.App header h1 a:visited {
+	color: rgb(255, 179, 0);
+}
