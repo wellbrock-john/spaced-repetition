@@ -12,7 +12,7 @@ const LanguageContext = React.createContext({
 
 export default LanguageContext;
 
-export class LanguageContextProvider extends Component {
+export class LanguageProvider extends Component {
 	state = {
 		language: [],
 		error: null,

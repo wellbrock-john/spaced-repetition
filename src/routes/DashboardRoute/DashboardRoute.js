@@ -1,11 +1,35 @@
 import React, { Component } from "react";
-import Context from "../../contexts/UserContext";
+import LanguageContext from "../../contexts/LanguageContext";
+import LanguageService from "../../services/language-service";
+import TokenService from "../../services/token-service";
+import MyLanguage from "../../components/MyLanguage/MyLanguage";
 
 class DashboardRoute extends Component {
-	static contextType = Context;
+	static contextType = LanguageContext;
+
+	componentDidMount() {
+		LanguageService.getLanguage()
+			.then((res) => {
+				this.context.setLanguage(res.language);
+				this.context.setWords(res.words);
+			})
+			.catch((err) => {
+				if (err.error === "Unauthorized request") {
+					TokenService.clearAuthToken();
+					this.props.history.push("/login");
+				}
+				this.context.setError(err);
+			});
+	}
 
 	render() {
-		return <section>implement and style me</section>;
+		const { language, words } = this.context;
+		console.log(words);
+		return (
+			<section>
+				<MyLanguage language={language} words={words} />
+			</section>
+		);
 	}
 }
 
