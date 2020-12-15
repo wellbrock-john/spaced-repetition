@@ -34,13 +34,13 @@ class MyLanguage extends Component {
 				<header id="dash-header">
 					<h2>
 						{language.name}
-						<span>Total Correct: {language.total_score}</span>
+						<span id="total-span">Total Correct: {language.total_score}</span>
 					</h2>
 					<button id="learn-btn">
 						<Link to="/learn">Let's Learn Latin!</Link>
 					</button>
 				</header>
-				<div>
+				<div id="dash-div-lvl-2">
 					<h3>Here are some words to start learning...</h3>
 					{this.renderMyWords()}
 				</div>

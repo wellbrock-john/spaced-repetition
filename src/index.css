@@ -5,8 +5,14 @@
 }
 
 html {
-	height: 100%;
-	background-color: aliceblue;
+	min-height: -webkit-fill-available;
+	background-image: -moz-linear-gradient(rgb(19, 98, 129), rgb(197, 222, 245));
+	background-image: -o-linear-gradient(rgb(19, 98, 129), rgb(197, 222, 245));
+	background-image: -webkit-linear-gradient(
+		rgb(19, 98, 129),
+		rgb(197, 222, 245)
+	);
+	background-size: cover;
 }
 
 body {

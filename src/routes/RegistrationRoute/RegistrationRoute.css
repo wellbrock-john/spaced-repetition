@@ -27,7 +27,7 @@
 	font-size: 0.85rem;
 }
 
-#rounded {
+#rounded-bot {
 	margin: 0;
 	border: 1px solid black;
 	border-radius: 10px;
@@ -43,7 +43,7 @@
 
 @media all and (min-width: 500px) {
 	#reg-route-h2 {
-		margin: 10rem 0 0 0;
+		margin: 7rem 0 0 0;
 		align-self: center;
 	}
 
@@ -52,6 +52,20 @@
 	}
 
 	#reg-footer a {
+		font-size: large;
+	}
+
+	#rounded-bot {
+		width: 40%;
+	}
+
+	#rounded-top {
+		margin-top: 5rem;
+		width: 40%;
+	}
+
+	#reg-route-p {
+		line-height: 1.5rem;
 		font-size: large;
 	}
 }

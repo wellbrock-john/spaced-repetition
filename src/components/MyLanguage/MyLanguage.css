@@ -16,6 +16,10 @@ header a {
 	letter-spacing: 0.5px;
 }
 
+#dash-header {
+	background-color: transparent;
+}
+
 #learn-btn {
 	margin-left: 1.5rem;
 	width: 8rem;
@@ -37,6 +41,89 @@ header a {
 }
 
 #count-span {
-	color: rgb(5, 66, 165);
+	color: rgb(0, 0, 0);
 	font-family: cursive;
+}
+
+#word-divider {
+	display: none;
+}
+
+@media all and (min-width: 500px) {
+	h2,
+	h3,
+	#learn-btn,
+	#dash-list {
+		margin-left: 0;
+	}
+
+	h2 {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		letter-spacing: 1.5px;
+	}
+
+	#total-span {
+		margin: 0.5rem 0 0 0;
+	}
+
+	#dash-header {
+		display: flex;
+		background-color: transparent;
+	}
+
+	#learn-btn {
+		align-self: center;
+		line-height: 2.5rem;
+		width: 10rem;
+	}
+
+	#learn-btn a {
+		font-size: medium;
+	}
+
+	#dash-div-lvl-2 {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		font-size: larger;
+		letter-spacing: 1px;
+	}
+
+	#dash-list {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		list-style: none;
+		width: 75%;
+	}
+
+	#dash-list li {
+		margin-right: 1rem;
+		margin-top: 1rem;
+		width: 15rem;
+		height: 15rem;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		border: solid 4px rgb(19, 98, 129);
+		border-radius: 5px;
+		padding-left: 1rem;
+		background-color: rgb(251, 192, 53);
+	}
+
+	#dash-list li h4 {
+		width: 90%;
+		height: 1rem;
+		margin: 0;
+	}
+
+	#count-span {
+		margin-left: 0;
+	}
 }
