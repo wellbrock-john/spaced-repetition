@@ -14,3 +14,8 @@
 .App header h1 a:visited {
 	color: rgb(255, 179, 0);
 }
+
+main {
+	display: flex;
+	flex-direction: column;
+}

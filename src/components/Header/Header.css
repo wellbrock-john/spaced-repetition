@@ -4,6 +4,7 @@ header {
 	justify-content: center;
 	width: 100%;
 	background-color: rgb(19, 98, 129);
+	padding-top: 0.5rem;
 }
 
 nav {

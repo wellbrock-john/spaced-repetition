@@ -1,7 +1,42 @@
 h2 {
 	color: rgb(255, 179, 0);
+	margin-left: 1.5rem;
+}
+
+h3 {
+	margin-left: 1.5rem;
 }
 
 header a {
 	color: rgb(255, 179, 0);
+}
+
+#dash-header,
+#dash-header a {
+	letter-spacing: 0.5px;
+}
+
+#learn-btn {
+	margin-left: 1.5rem;
+	width: 8rem;
+	background-color: rgb(65, 86, 107);
+}
+
+#learn-btn a {
+	text-decoration: none;
+}
+
+#dash-div {
+	margin-top: 0;
+}
+
+#dash-list {
+	margin-left: 0.5rem;
+	list-style: upper-latin;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#count-span {
+	color: rgb(5, 66, 165);
+	font-family: cursive;
 }

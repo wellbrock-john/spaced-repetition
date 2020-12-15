@@ -12,13 +12,13 @@ class MyLanguage extends Component {
 		const { words } = this.props;
 		console.log(words);
 		return (
-			<ul>
+			<ul id="dash-list">
 				{words.map((word) => (
 					<li key={word.id}>
 						<h4>{word.original}</h4>
 						<div>
-							<span>Correct: {word.correct_count}</span>
-							<span>Incorrect: {word.incorrect_count}</span>
+							<span id="count-span">Correct: {word.correct_count}</span>
+							<span id="count-span">Incorrect: {word.incorrect_count}</span>
 						</div>
 					</li>
 				))}
@@ -30,13 +30,15 @@ class MyLanguage extends Component {
 		const { language } = this.props;
 		console.log(language.total_score);
 		return (
-			<div>
-				<header>
+			<div id="dash-div">
+				<header id="dash-header">
 					<h2>
 						{language.name}
 						<span>Total Correct: {language.total_score}</span>
 					</h2>
-					<Link to="/learn">Let's Learn Latin!</Link>
+					<button id="learn-btn">
+						<Link to="/learn">Let's Learn Latin!</Link>
+					</button>
 				</header>
 				<div>
 					<h3>Here are some words to start learning...</h3>

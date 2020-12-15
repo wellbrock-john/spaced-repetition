@@ -3,6 +3,7 @@ import LanguageContext from "../../contexts/LanguageContext";
 import LanguageService from "../../services/language-service";
 import TokenService from "../../services/token-service";
 import MyLanguage from "../../components/MyLanguage/MyLanguage";
+import "./DashboardRoute.css";
 
 class DashboardRoute extends Component {
 	static contextType = LanguageContext;
@@ -26,7 +27,8 @@ class DashboardRoute extends Component {
 		const { language, words } = this.context;
 		console.log(words);
 		return (
-			<section>
+			<section id="dash-sec">
+				<hr id="rounded" />
 				<MyLanguage language={language} words={words} />
 			</section>
 		);

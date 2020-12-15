@@ -18,12 +18,12 @@ class RegistrationRoute extends Component {
 	render() {
 		return (
 			<section id="reg-route-sec">
-				<hr className="rounded-top" />
+				<hr id="rounded-top" />
 				<p id="reg-route-p">
 					Practice learning a language with the spaced repetition revision
 					technique.
 				</p>
-				<hr className="rounded" />
+				<hr id="rounded" />
 				<h2 id="reg-route-h2">Sign Up Form</h2>
 				<RegistrationForm
 					onRegistrationSuccess={this.handleRegistrationSuccess}
