@@ -5,14 +5,14 @@
 }
 
 html {
-	min-height: -webkit-fill-available;
+	min-height: 100vh;
 	background-image: -moz-linear-gradient(rgb(19, 98, 129), rgb(197, 222, 245));
 	background-image: -o-linear-gradient(rgb(19, 98, 129), rgb(197, 222, 245));
 	background-image: -webkit-linear-gradient(
 		rgb(19, 98, 129),
 		rgb(197, 222, 245)
 	);
-	background-size: cover;
+	background-size: 100vh;
 }
 
 body {
