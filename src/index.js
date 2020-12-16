@@ -3,6 +3,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import { UserProvider } from "./contexts/UserContext";
+import { LearnProvider } from "./contexts/LearnContext";
 import { LanguageProvider } from "./contexts/LanguageContext";
 import App from "./components/App/App";
 import "./setup-icons";
@@ -13,7 +14,9 @@ ReactDOM.render(
 	<BrowserRouter>
 		<UserProvider>
 			<LanguageProvider>
-				<App />
+				<LearnProvider>
+					<App />
+				</LearnProvider>
 			</LanguageProvider>
 		</UserProvider>
 	</BrowserRouter>,

@@ -1,7 +1,7 @@
 import config from "../config";
 import TokenService from "./token-service";
 
-const LanguageApiService = {
+const LanguageService = {
 	getLanguage() {
 		return fetch(`${config.API_ENDPOINT}/language`, {
 			method: "GET",
@@ -38,4 +38,4 @@ const LanguageApiService = {
 	},
 };
 
-export default LanguageApiService;
+export default LanguageService;
