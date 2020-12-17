@@ -41,7 +41,7 @@ class ShowFeedback extends Component {
 				</p>
 				<Button
 					ref={this.nextButton}
-					className="DisplayFeedback__next-word-button"
+					className="ShowFeedback__next-word-button"
 					onClick={this.goToNextWord}
 				>
 					Try another word!

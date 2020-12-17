@@ -2,13 +2,5 @@
 	margin-top: 0;
 }
 
-#rounded {
-	margin: 0;
-	border: 2px solid rgb(57, 71, 87);
-	border-radius: 0;
-	width: 100%;
-}
-
 @media all and (min-width: 500px) {
-    
 }

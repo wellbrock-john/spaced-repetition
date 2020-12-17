@@ -1,0 +1,16 @@
+.ShowCounts {
+	margin-left: 2rem;
+	margin-right: 1rem;
+}
+
+.correct span {
+	margin-left: 0;
+	color: black;
+	font-weight: 500;
+}
+
+.incorrect span {
+	margin-left: 0;
+	color: black;
+	font-weight: 500;
+}

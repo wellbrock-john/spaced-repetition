@@ -8,7 +8,7 @@ class ShowCounts extends Component {
 	render() {
 		const { wordCorrectCount, wordIncorrectCount } = this.context;
 		return (
-			<div className="DisplayCounts">
+			<div className="ShowCounts">
 				<p className="correct">
 					You have answered this word correctly <span>{wordCorrectCount}</span>{" "}
 					times.

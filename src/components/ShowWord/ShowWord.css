@@ -1,0 +1,22 @@
+.show-word-div {
+	width: 100%;
+}
+
+.show-word-span {
+	color: rgb(255, 179, 0);
+}
+
+@media all and (min-width: 500px) {
+	.show-word-div {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		margin-top: 5rem;
+	}
+
+	.show-word-span {
+		margin-bottom: 0;
+		font-size: x-large;
+	}
+}

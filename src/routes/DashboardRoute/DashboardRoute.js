@@ -28,7 +28,6 @@ class DashboardRoute extends Component {
 		console.log(words);
 		return (
 			<section id="dash-sec">
-				<hr id="rounded" />
 				<MyLanguage language={language} words={words} />
 			</section>
 		);

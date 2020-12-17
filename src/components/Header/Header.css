@@ -2,7 +2,7 @@ header {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	width: 100%;
+	width: 100vw;
 	background-color: rgb(19, 98, 129);
 	padding-top: 0.5rem;
 }
@@ -38,6 +38,7 @@ span {
 
 @media all and (min-width: 500px) {
 	header {
+		width: 100vw;
 		align-items: center;
 		padding: 3rem 0;
 	}

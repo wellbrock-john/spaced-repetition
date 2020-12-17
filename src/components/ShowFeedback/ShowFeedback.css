@@ -1,0 +1,48 @@
+.ShowFeedback p {
+	margin-left: 1.5rem;
+	margin-right: 1rem;
+	line-height: 1.5rem;
+}
+
+.ShowFeedback p span {
+	margin: 0;
+	color: rgb(26, 28, 172);
+	font-weight: 600;
+}
+
+.feedback-correct {
+	color: black;
+}
+
+.feedback-incorrect {
+	color: black;
+}
+
+.ShowFeedback__next-word-button {
+	margin-left: 1.5rem;
+	width: 7rem;
+	line-height: 1rem;
+}
+
+@media all and (min-width: 500px) {
+	.ShowFeedback {
+		margin-top: 5rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.ShowFeedback__next-word-button {
+		align-self: unset;
+		margin-left: 0;
+		height: 4rem;
+		width: 10rem;
+		font-size: large;
+	}
+
+	.ShowFeedback p {
+		text-align: center;
+		font-size: large;
+	}
+}

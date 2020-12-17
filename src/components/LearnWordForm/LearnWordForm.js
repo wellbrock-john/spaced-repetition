@@ -3,6 +3,7 @@ import LanguageService from "../../services/language-service";
 import LearnContext from "../../contexts/LearnContext";
 import { Input, Label } from "../Form/Form";
 import Button from "../Button/Button";
+import "./LearnWordForm.css";
 
 class LearnWordForm extends Component {
 	static contextType = LearnContext;
@@ -40,9 +41,9 @@ class LearnWordForm extends Component {
 	render() {
 		const { error } = this.state;
 		return (
-			<form className="LearnWordForm" onSubmit={this.handleSubmit}>
+			<form className="learn-word-form" onSubmit={this.handleSubmit}>
 				<div role="alert">{error && <p className="red">{error}</p>}</div>
-				<div className="LearnWordForm__guess-input">
+				<div className="learn-word-form-guess-input">
 					<Label htmlFor="learn-guess-input">
 						What's the translation for this word?
 					</Label>
@@ -51,10 +52,12 @@ class LearnWordForm extends Component {
 						id="learn-guess-input"
 						name="guess"
 						required
-						placeholder="Apple"
+						placeholder=". . ."
 					/>
 				</div>
-				<Button type="submit">Submit your answer</Button>
+				<Button className="submit-guess-btn" type="submit">
+					Submit your answer
+				</Button>
 			</form>
 		);
 	}

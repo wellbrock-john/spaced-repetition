@@ -23,6 +23,7 @@ export default class App extends Component {
 		return (
 			<div id="App">
 				<Header />
+				<hr id="rounded" />
 				<main>
 					{hasError && <p>There was an error! Oh no!</p>}
 					<Switch>
