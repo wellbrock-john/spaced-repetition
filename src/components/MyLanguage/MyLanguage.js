@@ -10,7 +10,6 @@ class MyLanguage extends Component {
 
 	renderMyWords() {
 		const { words } = this.props;
-		console.log(words);
 		return (
 			<ul id="dash-list">
 				{words.map((word) => (
@@ -28,7 +27,6 @@ class MyLanguage extends Component {
 
 	render() {
 		const { language } = this.props;
-		console.log(language.total_score);
 		return (
 			<div id="dash-div">
 				<header id="dash-header">

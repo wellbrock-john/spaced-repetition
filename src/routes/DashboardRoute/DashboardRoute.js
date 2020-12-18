@@ -25,7 +25,6 @@ class DashboardRoute extends Component {
 
 	render() {
 		const { language, words } = this.context;
-		console.log(words);
 		return (
 			<section id="dash-sec">
 				<MyLanguage language={language} words={words} />
