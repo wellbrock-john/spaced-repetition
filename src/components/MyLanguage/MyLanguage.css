@@ -1,5 +1,5 @@
 h2 {
-	color: rgb(255, 179, 0);
+	color: #ffcf00;
 	margin-left: 1.5rem;
 }
 
@@ -8,7 +8,7 @@ h3 {
 }
 
 header a {
-	color: rgb(255, 179, 0);
+	color: #ffcf00;
 }
 
 #dash-header,
@@ -111,7 +111,7 @@ header a {
 		flex-wrap: wrap;
 		justify-content: space-between;
 		align-items: center;
-		border: solid 4px rgb(19, 98, 129);
+		border: solid 4px rgb(0, 65, 108);
 		border-radius: 5px;
 		padding-left: 1rem;
 		background-color: rgb(251, 192, 53);

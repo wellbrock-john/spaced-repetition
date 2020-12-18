@@ -3,7 +3,7 @@
 }
 
 .show-word-span {
-	color: rgb(255, 179, 0);
+	color: #ffcf00;
 }
 
 @media all and (min-width: 500px) {
