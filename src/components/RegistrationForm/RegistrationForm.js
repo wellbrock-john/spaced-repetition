@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Input, Required, Label } from "../Form/Form";
 import AuthApiService from "../../services/auth-api-service";
+import UserContext from "../../contexts/UserContext";
 import Button from "../Button/Button";
 import "./RegistrationForm.css";
 
@@ -9,27 +10,36 @@ class RegistrationForm extends Component {
 		onRegistrationSuccess: () => {},
 	};
 
+	static contextType = UserContext;
+
 	state = { error: null };
 
 	firstInput = React.createRef();
 
-	handleSubmit = (ev) => {
+	handleSubmit = async (ev) => {
 		ev.preventDefault();
 		const { name, username, password } = ev.target;
-		AuthApiService.postUser({
+		
+		try {
+			await AuthApiService.postUser({
 			name: name.value,
 			username: username.value,
 			password: password.value,
-		})
-			.then((user) => {
-				name.value = "";
-				username.value = "";
-				password.value = "";
-				this.props.onRegistrationSuccess();
-			})
-			.catch((res) => {
-				this.setState({ error: res.error });
-			});
+		});
+		const { authToken } = await AuthApiService.postLogin({
+		  username: username.value,
+		  password: password.value
+		});
+  
+		name.value = '';
+		username.value = '';
+		password.value = '';
+  
+		this.context.processLogin(authToken);
+		return this.history.push('/');
+	  } catch ({ error }) {
+		return this.setState({ error });
+	  }
 	};
 
 	componentDidMount() {
